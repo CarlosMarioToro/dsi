@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/dsi/static/css/main.f102175a.css",
+    "main.js": "/dsi/static/js/main.f424cc71.js",
+    "static/js/787.14678e50.chunk.js": "/dsi/static/js/787.14678e50.chunk.js",
+    "static/media/Logo dsi.ico": "/dsi/static/media/Logo dsi.0bcd9fa0e5e9c17fd8b3.ico",
+    "index.html": "/dsi/index.html",
+    "main.f102175a.css.map": "/dsi/static/css/main.f102175a.css.map",
+    "main.f424cc71.js.map": "/dsi/static/js/main.f424cc71.js.map",
+    "787.14678e50.chunk.js.map": "/dsi/static/js/787.14678e50.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f102175a.css",
+    "static/js/main.f424cc71.js"
+  ]
+}
