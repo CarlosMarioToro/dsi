@@ -7,7 +7,7 @@ import * as RiIcons from 'react-icons/ri';
 export const SidebarData = [
   {
     title: 'Archivo',
-    path: '/overview',
+    path: '',
     icon: <AiIcons.AiFillHome />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -15,12 +15,12 @@ export const SidebarData = [
     subNav: [
       {
         title: 'Configurar Impresora',
-        path: '/overview/users',
+        path: '/printer',
         icon: <AiIcons.AiFillPrinter/>
       },
       {
         title: 'Calculadora',
-        path: '/overview/revenue',
+        path: '/calculator',
         icon: <AiIcons.AiFillCalculator />
       }
     ]
@@ -35,30 +35,31 @@ export const SidebarData = [
     subNav: [
       {
         title: 'Generales',
-        path: '/reports/reports1',
+        path: '',
         icon: <IoIcons.IoIosPaper />,
-        cName: 'sub-nav'
+        iconClosed: <RiIcons.RiArrowDownSFill />,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
       },
       {
         title: 'Insumos',
-        path: '/reports/reports2',
+        path: '',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
       {
         title: 'Gastos',
-        path: '/reports/reports3',
+        path: '',
         icon: <IoIcons.IoIosPaper />
       },
       {
         title: 'Administrativos',
-        path: '/reports/reports2',
+        path: '',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
       {
         title: 'Produccion',
-        path: '/reports/reports3',
+        path: '',
         icon: <IoIcons.IoIosPaper />
       }
     ]
@@ -120,23 +121,23 @@ export const SidebarData = [
       },
       {
         title: 'Indicadores de Gestion',
-        path: '/reports/reports3',
+        path: '/indicadores-gestion',
         icon: <IoIcons.IoIosPaper />
       },
       {
         title: 'Consulta Presupuesto Ventas',
-        path: '/reports/reports2',
+        path: '/consulta-presupuesto-ventas',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
       {
         title: 'Archivo Plano Mov Contable',
-        path: '/reports/reports3',
+        path: 'archivo-plano-contable',
         icon: <IoIcons.IoIosPaper />
       },
       {
         title: 'Modificar Mov Contable',
-        path: '/reports/reports1',
+        path: '/mod-mov-cont',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
