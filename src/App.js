@@ -21,12 +21,12 @@ function App() {
     <Router>
       <Sidebar />
       <Routes>
-        <Route path='/printer' exact component={Printer} />
-        <Route path='/calculator' exact component={Calculator} />
-        <Route path='/indicadores-gestion' exact component={IndicadoresGestion} />
-        <Route path='/consulta-presupuesto-ventas' exact component={ConsultaPresupuestoVentas} />
-        <Route path='/archivo-plano-contable' exact component={ArchivoPlanoContable} />
-        <Route path='/mod-mov-cont' exact component={ModificarMovContable} />
+        <Route exact path='/printer' element={<Printer/>} />
+        <Route exact path='/calculator' element={<Calculator/>} />
+        <Route exact path='/indicadores-gestion' element={<IndicadoresGestion/>} />
+        <Route exact path='/consulta-presupuesto-ventas' element={<ConsultaPresupuestoVentas/>} />
+        <Route exact path='/archivo-plano-contable' element={<ArchivoPlanoContable/>} />
+        <Route exact path='/mod-mov-cont' element={<ModificarMovContable/>} />
       </Routes>
     </Router>
   );

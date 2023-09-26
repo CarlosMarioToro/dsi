@@ -7,11 +7,9 @@ import * as RiIcons from 'react-icons/ri';
 export const SidebarData = [
   {
     title: 'Archivo',
-    path: '',
     icon: <AiIcons.AiFillHome />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
-
     subNav: [
       {
         title: 'Configurar Impresora',
@@ -27,11 +25,9 @@ export const SidebarData = [
   },
   {
     title: 'Maestros',
-    path: '/reports',
     icon: <IoIcons.IoIosPaper />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
-
     subNav: [
       {
         title: 'Generales',
@@ -39,12 +35,38 @@ export const SidebarData = [
         icon: <IoIcons.IoIosPaper />,
         iconClosed: <RiIcons.RiArrowDownSFill />,
         iconOpened: <RiIcons.RiArrowUpSFill />,
+        subNav: [
+          {
+            title: 'Generales-Sub',
+            path: '/printer',
+            icon: <AiIcons.AiFillPrinter/>
+          },
+          {
+            title: 'Generales-Sub2',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          }
+        ]
       },
       {
         title: 'Insumos',
         path: '',
         icon: <IoIcons.IoIosPaper />,
-        cName: 'sub-nav'
+        iconClosed: <RiIcons.RiArrowDownSFill />,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
+        subNav: [
+          {
+            title: 'Bodegas',
+            path: '/printer',
+            icon: <AiIcons.AiFillPrinter/>,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Grupos Inventarios',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          }
+        ]
       },
       {
         title: 'Gastos',
@@ -55,7 +77,6 @@ export const SidebarData = [
         title: 'Administrativos',
         path: '',
         icon: <IoIcons.IoIosPaper />,
-        cName: 'sub-nav'
       },
       {
         title: 'Produccion',
@@ -66,63 +87,63 @@ export const SidebarData = [
   },
   {
     title: 'Insumos',
-    path: '/products',
+    path: '',
     icon: <FaIcons.FaCartPlus />
   },
   {
     title: 'Produccion',
-    path: '/team',
+    path: '',
     icon: <RiIcons.RiProductHuntFill/>
   },
   {
     title: 'Proveedores',
-    path: '/messages',
+    path: '',
     icon: <FaIcons.FaEnvelopeOpenText />
   },
   {
     title: 'Clientes',
-    path: '/support',
+    path: '',
     icon: <IoIcons.IoMdPeople />
   },
   {
     title: 'Producto Terminado',
-    path: '/products',
+    path: '',
     icon: <FaIcons.FaCartPlus />
   },
   {
     title: 'Consultas',
-    path: '/team',
+    path: '',
     icon: <RiIcons.RiPieChartFill />
   },
   {
     title: 'Inventario Fisico',
-    path: '/messages',
+    path: '',
     icon: <FaIcons.FaEnvelopeOpenText />
   },
   {
     title: 'Gestion Administrativa',
-    path: '/support',
+    path: '',
     icon: <IoIcons.IoMdHelpCircle />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
-
     subNav: [
       {
         title: 'Seguridad',
-        path: '/reports/reports1',
+        path: '',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
       {
         title: 'Cerrar Mes',
-        path: '/reports/reports2',
+        path: '',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
       {
         title: 'Indicadores de Gestion',
         path: '/indicadores-gestion',
-        icon: <IoIcons.IoIosPaper />
+        icon: <IoIcons.IoIosPaper />,
+        cName: 'sub-nav'
       },
       {
         title: 'Consulta Presupuesto Ventas',
@@ -133,7 +154,8 @@ export const SidebarData = [
       {
         title: 'Archivo Plano Mov Contable',
         path: 'archivo-plano-contable',
-        icon: <IoIcons.IoIosPaper />
+        icon: <IoIcons.IoIosPaper />,
+        cName: 'sub-nav'
       },
       {
         title: 'Modificar Mov Contable',
@@ -143,68 +165,73 @@ export const SidebarData = [
       },
       {
         title: 'Reportes Contables',
-        path: '/reports/reports2',
+        path: '',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
       {
         title: 'Reportes Iva',
-        path: '/reports/reports3',
-        icon: <IoIcons.IoIosPaper />
+        path: '',
+        icon: <IoIcons.IoIosPaper />,
+        cName: 'sub-nav'
       },
       {
         title: 'Reportes Retefuente',
-        path: '/reports/reports2',
+        path: '',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
       {
         title: 'Saldos Iniciales Cartera',
-        path: '/reports/reports3',
-        icon: <IoIcons.IoIosPaper />
+        path: '',
+        icon: <IoIcons.IoIosPaper />,
+        cName: 'sub-nav'
       },
       {
         title: 'Consulta Ventas Caja General',
-        path: '/reports/reports3',
-        icon: <IoIcons.IoIosPaper />
+        path: '',
+        icon: <IoIcons.IoIosPaper />,
+        cName: 'sub-nav'
       },
       {
         title: 'Rotacion Cartera',
-        path: '/reports/reports2',
+        path: '',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
       {
         title: 'Recordatorios Cartera',
-        path: '/reports/reports3',
-        icon: <IoIcons.IoIosPaper />
+        path: '',
+        icon: <IoIcons.IoIosPaper />,
+        cName: 'sub-nav'
       },
       {
         title: 'Consulta Recordatorios Cartera',
-        path: '/reports/reports1',
+        path: '',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
       {
         title: 'Recaudar Kardex Insumos',
-        path: '/reports/reports2',
+        path: '',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
       {
         title: 'Actualizar Cartera Perdida',
-        path: '/reports/reports3',
-        icon: <IoIcons.IoIosPaper />
+        path: '',
+        icon: <IoIcons.IoIosPaper />,
+        cName: 'sub-nav'
       },
       {
         title: 'Documentos Electronicos HGI',
-        path: '/reports/reports2',
+        path: '',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
       {
         title: 'Modificar Factura CXP',
-        path: '/reports/reports3',
+        path: '',
         icon: <IoIcons.IoIosPaper />
       },
     ]

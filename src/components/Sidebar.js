@@ -47,6 +47,7 @@ const Sidebar = () => {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
+  // console.log(SidebarData);
 
   return (
     <>

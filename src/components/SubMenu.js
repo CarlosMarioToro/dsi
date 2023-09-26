@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import OtherLevelMenu from './OtherLevelMenu';
 
 const SidebarLink = styled(Link)`
   display: flex;
@@ -15,7 +16,7 @@ const SidebarLink = styled(Link)`
 
   &:hover {
     background: #DDD;
-    border-left: 4px solid #DDD;
+    border-left: 3px solid #DDD;
     cursor: pointer;
   }
 `;
@@ -27,7 +28,7 @@ const SidebarLabel = styled.span`
 const DropdownLink = styled(Link)`
   background: #EEE;
   height: 40px;
-  padding-left: 3rem;
+  padding-left: 2rem;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -44,6 +45,7 @@ const SubMenu = ({ item }) => {
   const [subnav, setSubnav] = useState(false);
 
   const showSubnav = () => setSubnav(!subnav);
+  // console.log({item});
 
   return (
     <>
@@ -62,15 +64,39 @@ const SubMenu = ({ item }) => {
       </SidebarLink>
       {subnav &&
         item.subNav.map((item, index) => {
-          return (
-            <DropdownLink to={item.path} key={index}>
-              {item.icon}
-              <SidebarLabel>{item.title}</SidebarLabel>
-            </DropdownLink>
-          );
+          console.log(item.title, index);
+          if (!item.subNav){
+            return (
+              <DropdownLink to={item.path} key={index}>
+                {item.icon}
+                <SidebarLabel>{item.title}</SidebarLabel>
+              </DropdownLink>
+            );
+          }
+          return <OtherLevelMenu item={item} key={index} />;
+          // return (
+          //   <DropdownLink to={item.path} key={index}>
+          //     {item.icon}
+          //     <SidebarLabel>{item.title}</SidebarLabel>
+          //   </DropdownLink>
+          // );
         })}
     </>
   );
 };
 
 export default SubMenu;
+
+// (<DropdownLink to={item.path} onClick={item.subNav && showSubnav}>
+//   <div>
+//     {item.icon}
+//     <SidebarLabel>{item.title}</SidebarLabel>
+//   </div>
+//   <div>
+//     {item.subNav && subnav
+//       ? item.iconOpened
+//       : item.subNav
+//       ? item.iconClosed
+//       : null}
+//   </div>
+// </DropdownLink>);

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Printer() {
     return (
-        <div>
+        <div className='printer'>
             <h1>Printer</h1>
         </div>
     )
