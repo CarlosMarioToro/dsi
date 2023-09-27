@@ -37,15 +37,65 @@ export const SidebarData = [
         iconOpened: <RiIcons.RiArrowUpSFill />,
         subNav: [
           {
-            title: 'Generales-Sub',
+            title: 'Centro de Costos',
             path: '/printer',
             icon: <AiIcons.AiFillPrinter/>
           },
           {
-            title: 'Generales-Sub2',
+            title: 'Ciudades',
             path: '/calculator',
             icon: <AiIcons.AiFillCalculator />
-          }
+          },
+          {
+            title: 'Clientes',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Departamentos',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Empresas Transportadoras',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Paises',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Proveedores',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Presupuesto',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Vendedores',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Zonas',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Barrios',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Temporadas',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
         ]
       },
       {
@@ -65,23 +115,233 @@ export const SidebarData = [
             title: 'Grupos Inventarios',
             path: '/calculator',
             icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Maestro de Insumos',
+            path: '/printer',
+            icon: <AiIcons.AiFillPrinter/>,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Subgrupos Inventarios',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Unidades de Movimiento',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
           }
         ]
       },
       {
         title: 'Gastos',
         path: '',
-        icon: <IoIcons.IoIosPaper />
+        icon: <IoIcons.IoIosPaper />,
+        iconClosed: <RiIcons.RiArrowDownSFill />,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
+        subNav: [
+          {
+            title: 'Grupo Gastos',
+            path: '/printer',
+            icon: <AiIcons.AiFillPrinter/>,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Maestro de Gastos',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Subgrupo Gasos',
+            path: '/printer',
+            icon: <AiIcons.AiFillPrinter/>,
+            cName: 'sub-nav'
+          }
+        ]
       },
       {
         title: 'Administrativos',
         path: '',
         icon: <IoIcons.IoIosPaper />,
+        iconClosed: <RiIcons.RiArrowDownSFill />,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
+        subNav: [
+          {
+            title: 'Bancos Transacciones',
+            path: '/printer',
+            icon: <AiIcons.AiFillPrinter/>,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Bancos Proveedores',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'CIF',
+            path: '/printer',
+            icon: <AiIcons.AiFillPrinter/>,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Comision por Recauda',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Maestros Comprobantes',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Maestro de Conceptos',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Parámetros Consecutivos',
+            path: '/printer',
+            icon: <AiIcons.AiFillPrinter/>,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Parámetros Compras',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Parámetros Facturación',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Parámetros Generales',
+            path: '/printer',
+            icon: <AiIcons.AiFillPrinter/>,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Parámetros Impuestos',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Periodos',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          }
+        ]
       },
       {
         title: 'Produccion',
         path: '',
-        icon: <IoIcons.IoIosPaper />
+        icon: <IoIcons.IoIosPaper />,
+        iconClosed: <RiIcons.RiArrowDownSFill />,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
+        subNav: [
+          {
+            title: 'Auditores Procesos',
+            path: '/printer',
+            icon: <AiIcons.AiFillPrinter/>,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Crear Referencia Diseño',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Crear Referencia',
+            path: '/printer',
+            icon: <AiIcons.AiFillPrinter/>,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Colores',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Coleccion',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Festivos',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Lineas',
+            path: '/printer',
+            icon: <AiIcons.AiFillPrinter/>,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Moldes',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Marcas',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Maquinas Confeccion',
+            path: '/printer',
+            icon: <AiIcons.AiFillPrinter/>,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Operacion Confeccion',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Prendas',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Piezas',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Partes Prenda',
+            path: '/printer',
+            icon: <AiIcons.AiFillPrinter/>,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Pintas Produccion',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Procesos',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Tallas',
+            path: '/printer',
+            icon: <AiIcons.AiFillPrinter/>,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Imprimir Codigo Barras',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          },
+          {
+            title: 'Insumos Por Linea',
+            path: '/calculator',
+            icon: <AiIcons.AiFillCalculator />
+          }
+        ]
       }
     ]
   },
