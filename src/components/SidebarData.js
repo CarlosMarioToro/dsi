@@ -13,12 +13,12 @@ export const SidebarData = [
     subNav: [
       {
         title: 'Configurar Impresora',
-        path: '/printer',
+        path: '/archivo/printer',
         icon: <AiIcons.AiFillPrinter/>
       },
       {
         title: 'Calculadora',
-        path: '/calculator',
+        path: '/archivo/calculator',
         icon: <AiIcons.AiFillCalculator />
       }
     ]
@@ -38,62 +38,62 @@ export const SidebarData = [
         subNav: [
           {
             title: 'Centro de Costos',
-            path: '/printer',
+            path: '/generales/centrocostos',
             icon: <AiIcons.AiFillPrinter/>
           },
           {
             title: 'Ciudades',
-            path: '/calculator',
+            path: '/generales/ciudades',
             icon: <AiIcons.AiFillCalculator />
           },
           {
             title: 'Clientes',
-            path: '/calculator',
+            path: '/generales/clientes',
             icon: <AiIcons.AiFillCalculator />
           },
           {
             title: 'Departamentos',
-            path: '/calculator',
+            path: '/generales/departamentos',
             icon: <AiIcons.AiFillCalculator />
           },
           {
             title: 'Empresas Transportadoras',
-            path: '/calculator',
+            path: '/generales/empresastransportadoras',
             icon: <AiIcons.AiFillCalculator />
           },
           {
             title: 'Paises',
-            path: '/calculator',
+            path: '/generales/paises',
             icon: <AiIcons.AiFillCalculator />
           },
           {
             title: 'Proveedores',
-            path: '/calculator',
+            path: '/generales/proveedores',
             icon: <AiIcons.AiFillCalculator />
           },
           {
             title: 'Presupuesto',
-            path: '/calculator',
+            path: '/generales/presupuesto',
             icon: <AiIcons.AiFillCalculator />
           },
           {
             title: 'Vendedores',
-            path: '/calculator',
+            path: '/generales/vendedoras',
             icon: <AiIcons.AiFillCalculator />
           },
           {
             title: 'Zonas',
-            path: '/calculator',
+            path: '/generales/zonas',
             icon: <AiIcons.AiFillCalculator />
           },
           {
             title: 'Barrios',
-            path: '/calculator',
+            path: '/generales/barrios',
             icon: <AiIcons.AiFillCalculator />
           },
           {
             title: 'Temporadas',
-            path: '/calculator',
+            path: '/generales/temporadas',
             icon: <AiIcons.AiFillCalculator />
           },
         ]
@@ -107,29 +107,29 @@ export const SidebarData = [
         subNav: [
           {
             title: 'Bodegas',
-            path: '/printer',
+            path: '/insumos/bodegas',
             icon: <AiIcons.AiFillPrinter/>,
             cName: 'sub-nav'
           },
           {
             title: 'Grupos Inventarios',
-            path: '/calculator',
+            path: '/insumos/gruposinventarios',
             icon: <AiIcons.AiFillCalculator />
           },
           {
             title: 'Maestro de Insumos',
-            path: '/printer',
+            path: '/insumos/maestroinsumos',
             icon: <AiIcons.AiFillPrinter/>,
             cName: 'sub-nav'
           },
           {
             title: 'Subgrupos Inventarios',
-            path: '/calculator',
+            path: '/insumos/subgruposinventarios',
             icon: <AiIcons.AiFillCalculator />
           },
           {
             title: 'Unidades de Movimiento',
-            path: '/calculator',
+            path: '/insumos/unidadesmovimiento',
             icon: <AiIcons.AiFillCalculator />
           }
         ]
@@ -169,7 +169,7 @@ export const SidebarData = [
         subNav: [
           {
             title: 'Bancos Transacciones',
-            path: '/printer',
+            path: '/administrativos/bancostransacciones',
             icon: <AiIcons.AiFillPrinter/>,
             cName: 'sub-nav'
           },

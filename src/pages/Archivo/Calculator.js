@@ -2,7 +2,7 @@ import React from 'react'
 
 function Calculator() {
   return (
-    <div className='calculator'>
+    <div className='main'>
         <h1>Calculator</h1>
     </div>
   )

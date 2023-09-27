@@ -11,12 +11,7 @@ html, body {
   height: 100vh;
 }
 
-.plano,
-.printer,
-.calculator,
-.pres-ventas,
-.indic-gestion,
-.mod-mov-cont {
+.main {
   display: flex;
   height: 90vh;
   align-items: center;
