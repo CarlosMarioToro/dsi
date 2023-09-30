@@ -87,7 +87,7 @@ import InactivarRefPedido from './pages/Produccion/InactivarRefPedido';
 import CopiarPedido from './pages/Produccion/CopiarPedido';
 import EntradaProcCodBar from './pages/Produccion/EntradaProcCodBar';
 import RemOtrosConc from './pages/Produccion/RemOtrosConc';
-// Menu Provvedores
+// Menu Proveedores
 import RegistrarGastos from './pages/Proveedores/RegistrarGastos';
 import NotasCredito from './pages/Proveedores/NotasCredito';
 import EgresoProveedores from './pages/Proveedores/EgresoProveedores';
@@ -103,6 +103,23 @@ import NotaCredito from './pages/Proveedores/Anular/NotaCredito';
 import RadicarFacInsumos from './pages/Proveedores/RadicarFacInsumos';
 import RadicarFacProcesos from './pages/Proveedores/RadicarFacProcesos';
 import AprobarPagos from './pages/Proveedores/AprobarPagos';
+// Menu Clientes
+import FacturarPedidos from './pages/Clientes/Facturar/FacturarPedidos';
+import FacturarRemisiones from './pages/Clientes/Facturar/FacturarRemisiones';
+import FacturarOtros from './pages/Clientes/Facturar/FacturarOtros';
+import FacturarCodBarras from './pages/Clientes/Facturar/FacturarCodBarras';
+import Vmi from './pages/Clientes/Facturar/Vmi';
+import Pdv from './pages/Clientes/Facturar/Pdv';
+import Factura from './pages/Clientes/Devoluciones/Factura';
+import Referencia from './pages/Clientes/Devoluciones/Referencia';
+import CodBarras from './pages/Clientes/Devoluciones/CodBarras';
+import NotaCreditoClientes from './pages/Clientes/NotaCreditoClientes';
+import ReciboCajaClientes from './pages/Clientes/ReciboCajaClientes';
+import ModificarReciboCaja from './pages/Clientes/ModificarReciboCaja';
+import AplicarNotaCreditoCliente from './pages/Clientes/AplicarNotaCredito';
+import AplicarReciboCaja from './pages/Clientes/AplicarReciboCaja';
+import AnularNotaCredito from './pages/Clientes/Anular/AnularNotaCredito';
+import AnularReciboCaja from './pages/Clientes/Anular/AnularReciboCaja';
 //
 import IndicadoresGestion from './pages/GestionAdministrativa/IndicadoresGestion';
 import ConsultaPresupuestoVentas from './pages/GestionAdministrativa/ConsultaPresupuestoVentas';
@@ -227,6 +244,23 @@ function App() {
         <Route exact path='/proveedores/radicarFacturaInsumos' element={<RadicarFacInsumos/>} />
         <Route exact path='/proveedores/radicarFacturasProcesos' element={<RadicarFacProcesos/>} />
         <Route exact path='/proveedores/aprobarPagos' element={<AprobarPagos/>} />
+
+        <Route exact path='/clientes/facturar/pedidos' element={<FacturarPedidos/>} />
+        <Route exact path='/clientes/facturar/remisiones' element={<FacturarRemisiones/>} />
+        <Route exact path='/clientes/facturar/otrosConceptos' element={<FacturarOtros/>} />
+        <Route exact path='/clientes/facturar/codBarras' element={<FacturarCodBarras/>} />
+        <Route exact path='/clientes/facturar/vmi' element={<Vmi/>} />
+        <Route exact path='/clientes/facturar/pdv' element={<Pdv/>} />
+        <Route exact path='/clientes/devoluciones/factura' element={<Factura/>} />
+        <Route exact path='/clientes/devoluciones/referencia' element={<Referencia/>} />
+        <Route exact path='/clientes/devoluciones/codBarras' element={<CodBarras/>} />
+        <Route exact path='/clientes/notaCredito' element={<NotaCreditoClientes/>} />
+        <Route exact path='/clientes/reciboCaja' element={<ReciboCajaClientes/>} />
+        <Route exact path='/clientes/modificarReciboCaja' element={<ModificarReciboCaja/>} />
+        <Route exact path='/clientes/aplicarNotaCredito' element={<AplicarNotaCreditoCliente/>} />
+        <Route exact path='/clientes/aplicarReciboCaja' element={<AplicarReciboCaja/>} />
+        <Route exact path='/clientes/anular/notaCredito' element={<AnularNotaCredito/>} />
+        <Route exact path='/clientes/anular/reciboCaja' element={<AnularReciboCaja/>} />
 
         <Route exact path='/indicadores-gestion' element={<IndicadoresGestion/>} />
         <Route exact path='/consulta-presupuesto-ventas' element={<ConsultaPresupuestoVentas/>} />

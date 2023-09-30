@@ -690,8 +690,8 @@ export const SidebarData = [
         ]
       },
       {
-        title: 'Notas Crédito',
-        path: '/clientes/notasCredito',
+        title: 'Nota Crédito',
+        path: '/clientes/notaCredito',
         icon: <IoIcons.IoMdPeople />,
         cName: 'sub-nav'
       },
@@ -857,7 +857,613 @@ export const SidebarData = [
   {
     title: 'Consultas',
     path: '',
-    icon: <RiIcons.RiPieChartFill />
+    icon: <RiIcons.RiPieChartFill />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+    subNav: [
+      {
+        title: 'Insumos',
+        path: '',
+        icon: <RiIcons.RiPieChartFill />,
+        iconClosed: <RiIcons.RiArrowDownSFill />,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
+        subNav: [
+          {
+            title: 'Antiguedad Inventarios',
+            path: '/consultas/insumos/antiguedad',
+            icon: <RiIcons.RiPieChartFill />,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Auditoria Compras',
+            path: '/consultas/insumos/auditoria',
+            icon: <RiIcons.RiPieChartFill />,
+          },
+          {
+            title: 'Saldo Inventario Insumos',
+            path: '/consultas/insumos/saldosInsumos',
+            icon: <RiIcons.RiPieChartFill />,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Saldo Inventario Insumos Fecha',
+            path: '/consultas/insumos/SaldosInsumosFecha',
+            icon: <RiIcons.RiPieChartFill />,
+          },
+          {
+            title: 'Transacciones por Mes',
+            path: '/consultas/insumos/Transacciones',
+            icon: <RiIcons.RiPieChartFill />,
+          },
+          {
+            title: 'Compras por Proveedor',
+            path: '/consultas/insumos/comprasProveedor',
+            icon: <RiIcons.RiPieChartFill />,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Compras por Articulo',
+            path: '/consultas/insumos/comprasArticulo',
+            icon: <RiIcons.RiPieChartFill />,
+          },
+          {
+            title: 'Kardex',
+            path: '/consultas/insumos/kardex',
+            icon: <RiIcons.RiPieChartFill />,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Ordenes de Compra',
+            path: '/consultas/insumos/ordenesCompra',
+            icon: <RiIcons.RiPieChartFill />,
+          },
+          {
+            title: 'Reporte Orden de Compra',
+            path: '/consultas/insumos/reporteOrdenesCompra',
+            icon: <RiIcons.RiPieChartFill />,
+          },
+          {
+            title: 'Movimiento por Concepto',
+            path: '/consultas/insumos/movimientoConcepto',
+            icon: <RiIcons.RiPieChartFill />,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Consulta Minimos Inventario',
+            path: '/consultas/insumos/minimosInventario',
+            icon: <RiIcons.RiPieChartFill />,
+          }
+        ]
+      },
+      {
+        title: 'Clientes',
+        path: '',
+        icon: <RiIcons.RiPieChartFill />,
+        iconClosed: <RiIcons.RiArrowDownSFill />,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
+        subNav: [
+          {
+            title: 'Cartera General',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Cartera Clientes',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+          },
+          {
+            title: 'Cartera por Vendedor',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Cartera por Parámetros',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+          },
+          {
+            title: 'Comisión por Vendedor',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+          },
+          {
+            title: 'Movimiento Histórico',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Reporte Despacho',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+            iconClosed: <RiIcons.RiArrowDownSFill />,
+            iconOpened: <RiIcons.RiArrowUpSFill />,
+            subNav: [
+              {
+                title: 'Reportes Remisión Despacho',
+                path: '/clientes/despacho/crearLista',
+                icon: <RiIcons.RiPieChartFill />,
+                cName: 'sub-nav'
+              },
+              {
+                title: 'Remisiones Pendientes',
+                path: '/clientes/despacho/remisionar',
+                icon: <RiIcons.RiPieChartFill />,
+              },
+              {
+                title: 'Reporte Remisión VMI/En Firme',
+                path: '/clientes/despacho/crearLista',
+                icon: <RiIcons.RiPieChartFill />,
+                cName: 'sub-nav'
+              },
+              {
+                title: 'Lista de Empaque',
+                path: '/clientes/despacho/remisionar',
+                icon: <RiIcons.RiPieChartFill />,
+              },
+              {
+                title: 'Consulta Remisión Kardex',
+                path: '/clientes/despacho/remisionar',
+                icon: <RiIcons.RiPieChartFill />,
+              }
+            ]
+          },
+          {
+            title: 'Reportes Individuales',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+            iconClosed: <RiIcons.RiArrowDownSFill />,
+            iconOpened: <RiIcons.RiArrowUpSFill />,
+            subNav: [
+              {
+                title: 'Reporte Factura',
+                path: '/clientes/despacho/crearLista',
+                icon: <RiIcons.RiPieChartFill />,
+                cName: 'sub-nav'
+              },
+              {
+                title: 'Reporte Nota Crédito',
+                path: '/clientes/despacho/remisionar',
+                icon: <RiIcons.RiPieChartFill />,
+              },
+              {
+                title: 'Reporte Recibo de Caja',
+                path: '/clientes/despacho/crearLista',
+                icon: <RiIcons.RiPieChartFill />,
+                cName: 'sub-nav'
+              },
+              {
+                title: 'Reporte de Factura de Ventas',
+                path: '/clientes/despacho/remisionar',
+                icon: <RiIcons.RiPieChartFill />,
+              }
+            ]
+          },
+          {
+            title: 'Reportes Mes',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+            iconClosed: <RiIcons.RiArrowDownSFill />,
+            iconOpened: <RiIcons.RiArrowUpSFill />,
+            subNav: [
+              {
+                title: 'Facturas por Mes',
+                path: '/clientes/despacho/crearLista',
+                icon: <RiIcons.RiPieChartFill />,
+                cName: 'sub-nav'
+              },
+              {
+                title: 'Notas Crédito por Mes',
+                path: '/clientes/despacho/remisionar',
+                icon: <RiIcons.RiPieChartFill />,
+              },
+              {
+                title: 'Recibos de Caja por Mes',
+                path: '/clientes/despacho/crearLista',
+                icon: <RiIcons.RiPieChartFill />,
+                cName: 'sub-nav'
+              }
+            ]
+          },
+          {
+            title: 'Ventas Consolidadas por Bodega/Marca',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+          },
+          {
+            title: 'Rentabilidad en Ventas',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Ventas por Cliente',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+          },
+          {
+            title: 'Ventas por Bodega',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+          },
+          {
+            title: 'Clientes por Zona',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Unidades Referencias Vendidas',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+          }
+        ]
+      },
+      {
+        title: 'Proveedores',
+        path: '',
+        icon: <RiIcons.RiPieChartFill />,
+        iconClosed: <RiIcons.RiArrowDownSFill />,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
+        subNav: [
+          {
+            title: 'Cartera General',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Cartera Caja Menor',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+          },
+          {
+            title: 'Compra sin Radicar',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Reporte Egreso',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+          },
+          {
+            title: 'Reporte Doc Equivalente',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+          },
+          {
+            title: 'Reporte Nota Crédito',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Reporte Radicado Caja Menor',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />
+          },
+          {
+            title: 'Compras por Mes',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />
+          },
+          {
+            title: 'Egresos por Mes',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />
+          },
+          {
+            title: 'Notas Créditos por Mes',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+          },
+          {
+            title: 'Movimiento Histórico',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Movimiento Histórico Prestamos',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+          },
+          {
+            title: 'Gastos',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+          },
+          {
+            title: 'Factura Compras',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Ordenes Prov VS Egresos',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+          }
+        ]
+      },
+      {
+        title: 'Producto Terminado',
+        path: '',
+        icon: <RiIcons.RiPieChartFill />,
+        iconClosed: <RiIcons.RiArrowDownSFill />,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
+        subNav: [
+          {
+            title: 'Saldo Inventario Actual',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Saldo Inventario Fecha',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+          },
+          {
+            title: 'Inventario Bodegas',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Kardex',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+          },
+          {
+            title: 'Transacciones por Mes',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+          },
+          {
+            title: 'Costos por Referencia',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Movimiento por Concepto',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />
+          },
+          {
+            title: 'Reporte Despacho en Consignación',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />
+          },
+          {
+            title: 'Despachos een Consignacion',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />
+          },
+          {
+            title: 'Entrada Prod VS Kardex',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+          }
+        ]
+      },
+      {
+        title: 'Producción',
+        path: '',
+        icon: <RiIcons.RiPieChartFill />,
+        iconClosed: <RiIcons.RiArrowDownSFill />,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
+        subNav: [
+          {
+            title: 'Pedidos',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+            iconClosed: <RiIcons.RiArrowDownSFill />,
+            iconOpened: <RiIcons.RiArrowUpSFill />,
+            subNav: [
+              {
+                title: 'Detalle del Pedido',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+                cName: 'sub-nav'
+              },
+              {
+                title: 'Consultas Pedidos',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+              },
+              {
+                title: 'Pedidos sin Facturar',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+                cName: 'sub-nav'
+              },
+              {
+                title: 'Pedidos Ordenes Inventario',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+              },
+              {
+                title: 'Correrias',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+                cName: 'sub-nav'
+              },
+              {
+                title: 'Pedidos Despachados',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+              },
+              {
+                title: 'Gestión Tiempos de Ciclo',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+                cName: 'sub-nav'
+              },
+              {
+                title: 'Reporte Separar Bodega',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+              }
+            ]
+          },
+          {
+            title: 'Ordenes Producción',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+            iconClosed: <RiIcons.RiArrowDownSFill />,
+            iconOpened: <RiIcons.RiArrowUpSFill />,
+            subNav: [
+              {
+                title: 'Consultar Costos Ordenes Producidas',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+                cName: 'sub-nav'
+              },
+              {
+                title: 'Consultar Auditorias Procesos',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+              },
+              {
+                title: 'Detalle Orden Producción',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+                cName: 'sub-nav'
+              },
+              {
+                title: 'Estado de Programacion',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+              },
+              {
+                title: 'Estado de Produccion',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+                cName: 'sub-nav'
+              },
+              {
+                title: 'Entradas Producción a Bodega',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+              },
+              {
+                title: 'Estado Ultimo Proceso',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+                cName: 'sub-nav'
+              },
+              {
+                title: 'Gestion Tiempos de Ciclo',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+              },
+              {
+                title: 'Inventario en Proceso',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+              },
+              {
+                title: 'Insumos por Orden de Produccion',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+                cName: 'sub-nav'
+              },
+              {
+                title: 'Imprimir Código Barras Orden',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+              },
+              {
+                title: 'Necesidades Compras Telas O.P.',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+                cName: 'sub-nav'
+              },
+              {
+                title: 'Reporte Orden Producción',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+              },
+              {
+                title: 'Tiempos de Ciclo',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+                cName: 'sub-nav'
+              },
+              {
+                title: 'Unidades Producidas',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+              }
+            ]
+          },
+          {
+            title: 'Terceros',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+            iconClosed: <RiIcons.RiArrowDownSFill />,
+            iconOpened: <RiIcons.RiArrowUpSFill />,
+            subNav: [
+              {
+                title: 'Remisión Despacho Insumos',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+                cName: 'sub-nav'
+              },
+              {
+                title: 'Remisión Despacho Producción',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+              },
+              {
+                title: 'Remisión Otros',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+                cName: 'sub-nav'
+              },
+              {
+                title: 'Gestión Tiempos de Ciclo en Proceso',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+              },
+              {
+                title: 'Gestión Proceso Terceros',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+                cName: 'sub-nav'
+              }
+            ]
+          },
+          {
+            title: 'Referencias',
+            path: '',
+            icon: <RiIcons.RiPieChartFill />,
+            iconClosed: <RiIcons.RiArrowDownSFill />,
+            iconOpened: <RiIcons.RiArrowUpSFill />,
+            subNav: [
+              {
+                title: 'Referencias Reservadas',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+                cName: 'sub-nav'
+              },
+              {
+                title: 'Reporte Referencia',
+                path: '',
+                icon: <RiIcons.RiPieChartFill />,
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     title: 'Inventario Fisico',
